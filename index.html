@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="website portofolio sangat sederhana dan ringkas">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fadli</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="wrapper">
+            <h1 class="logo">Fadli</h1>
+            <label for="check" id="bars"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="wrapper">
+            <div class="side home">
+                <a href="#home"><i class="fas fa-home"></i></a>
+                <p class="cap">Home</p>
+            </div>
+            <div class="side about">
+                <a href="#about"><i class="fas fa-user-alt"></i></a>
+                <p class="cap">About</p>
+            </div>
+            <div class="side code">
+                <a href="#skils"><i class="fas fa-code"></i></a>
+                <p class="cap">Skils</p>
+            </div>
+            <div class="side sekolah">
+                <a href="#school"><i class="fas fa-school"></i></a>
+                <p class="cap">School</p>
+            </div>
+            <div class="side kontak">
+                <a href="#contact"><i class="fas fa-comment-medical"></i></a>
+                <p class="cap">Contact</p>
+            </div>
+            <div class="side ig">
+                <a href="https://www.instagram.com/fadlikurniawan109/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <p class="cap">Instagram</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-all">
+        <section id="home">
+            <div class="wrapper">
+                <img src="img/home.png" alt="home" data-aos="fade-top">
+                <div class="caption">
+                    <h3>Hallo semuanya</h3>
+                    <div class="nama">Muhammad Fadli Kurniawan</div>
+                    <div class="moto">Jadilah diri sendiri, Jangan ikuti <span>gaya hidup orang lain</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="jdl" data-aos="fade-right">About</div>
+            <p class="pnj" data-aos="fade-left">Tentang Saya</p>
+            <div class="container-about">
+                <div class="wrapper">
+                    <img src="https://img.freepik.com/free-vector/webinar-concept-illustration_114360-4764.jpg?t=st=1645712743~exp=1645713343~hmac=8c1848cfead9fd6be56ae99f14e039416d236eb68d057b5fa849f7f3dd4c6d39&w=826" alt="home" data-aos="fade-right"   data-aos-delay="100">
+                    <div class="caption"  data-aos="fade-left" data-aos-delay="100">
+                        <p>Hallo Nama saya Muhammad Fadli Kurniawan, Saya dari kelas 10 SMK Jurusan RPL( Rekayasa Perangkat Lunak ) di Sekolah SMK Media Informatika Jakarta selatan, hobi Saya adalah Olahraga sore, seperti lari sore dan kardio dan juga menyusun program, salah satu nya mengoding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skils">
+            <div class="jdl" data-aos="fade-right">Skils</div>
+            <div class="pnj" data-aos="fade-left">Bahasa pemrograman yang saya pelajari</div>
+            <div class="wrapper" data-aos="fade-right">
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skil-html">70%</div>
+                </div>
+                <p>Python</p>
+                <div class="container">
+                    <div class="skil-py">50%</div>
+                </div>
+                <p>C++</p>
+                <div class="container">
+                    <div class="skil-cpp">40%</div>
+                </div>
+                <p>Java Script</p>
+                <div class="container">
+                    <div class="skil-js">20%</div>
+                </div>
+            </div>
+        </section>
+        <section id="school">
+            <div class="jdl" data-aos="fade-left">School</div>
+            <div class="pnj" data-aos="fade-right">Letak Sekolah Saya (SMK Media Informatika)</div>
+            <div class="wrapper" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.138806352202!2d106.74472071476937!3d-6.245432095479281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0c4943b8531%3A0x9f78e0f0e9f4c39f!2sSMK%20Media%20Informatika!5e0!3m2!1sid!2sid!4v1645715062249!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="iframe"></iframe>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="jdl" data-aos="fade-right">Contact</div>
+            <div class="pnj" data-aos="fade-up">Email Saya </div>
+            <div class="wrapper" data-aos="fade-up">
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=fadlikurniawan1009@gmail.com&" target="_blank">
+                <i class="fas fa-envelope"></i>fadlikurniawan1009@gmail.com</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <b>Muhammad Fadli Kurniawan</b> all right reserved
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

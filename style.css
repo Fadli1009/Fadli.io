@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container-all{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+    transition: .4s ease-in-out;
+}
+#bars{
+    cursor: pointer;
+    font-size: 25px;
+}
+nav{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 40px 0px;
+    z-index: 5;
+    width: 100%;
+    background-color: #053742;
+    color: #fff;
+    position: fixed;
+    position: -webkit-sticky;
+    box-shadow: 0px 5px 8px black;
+}
+nav .logo{
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+}
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+}
+.sidebar{
+    position: fixed;
+    width: 70px;
+    left: -300px;
+    z-index: 5;
+    height: 100vh;
+    text-align: center;
+}
+.side{
+    border: 1px s;
+    display: flex;
+    margin-bottom: 30px;
+}
+.home{
+    margin-top: 20px;
+}
+.code{
+    display: flex;
+}
+.sidebar .wrapper{
+    z-index: 10 !important;
+    position: relative;
+    top: 35%;
+    padding: 10px 20px 5px 20px;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #053742e8;
+}
+.sidebar .wrapper a{
+    color: #fff;
+}
+.sidebar .wrapper p.cap{
+    position: relative;
+    margin-left: 50px;
+    display: none;
+    z-index: 1;
+    font-weight: 800;
+}
+.sidebar a:hover + p.cap{
+    display: block;
+    transition: .3s;
+}
+
+#home{
+    height: 100vh;
+    z-index: -1;
+}
+#home img{
+    width: 550px;
+    height: 550px;
+}
+#home .wrapper{
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+#home .caption{
+    padding: 0px 10px 0px 30px;
+}
+#home h3{
+    font-size: 2.8em;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+#home .nama{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+#home .moto{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#home span{
+    color :red;
+}
+
+.jdl{
+    font-size: 35px;
+    text-align: center;
+    padding: 80px 0px;
+    font-weight: bolder;
+    color: #053742;
+}
+.pnj{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+#about{
+    margin: 0 auto;
+    width: 90%;
+}
+#about .container-about{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#about .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about img{
+    float: right;
+    width: 400px;
+    z-index: -1;
+    height: 400px;
+}
+#about .caption{
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+#skils{
+    z-index: -1 !important;
+}
+#skils .wrapper{
+    /* border: 1px solid; */
+    /* z-index: -7 !important; */
+    margin: 50px auto;
+    width: 90%;
+}
+#skils .container{
+    /* z-index: -1; */
+    background-color: gainsboro;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#skils .skil-html{
+    background-color:gold;
+    text-align: right;
+    width: 70%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#skils .skil-py{
+    background-color:rgb(0, 255, 255);
+    text-align: right;
+    width: 50%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#skils .skil-cpp{
+    background-color:rgb(136, 255, 152);
+    text-align: right;
+    width: 40%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#skils .skil-cpp{
+    background-color:rgb(136, 255, 152);
+    text-align: right;
+    width: 40%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#skils .skil-js{
+    background-color:rgb(136, 144, 255);
+    text-align: right;
+    width: 20%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#school .wrapper{
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+#contact .wrapper{
+    margin: 50px auto;
+    display: flex;
+    background-color: #053742;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.5em;
+    z-index: -1;
+    height: auto;
+    border-radius: 5px;
+}
+#contact i{
+    margin-right: 10px;
+}
+#contact .wrapper a{
+    color: #fff;
+    width: 100%;
+    /* margin-right: 40px; */
+}
+
+footer{
+    padding: 20px 5px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    background-color: black;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* responsive */
+
+@media screen and (max-width : 1026px){
+    #home img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width : 791px){
+    #home .nama{
+        font-size: 20px;
+    }
+    #home h3{
+        font-size: 30px;
+    }
+    #home .moto{
+        font-size: 15px;
+    }
+    #about .container-about{
+        flex: none;
+        display: block;
+    }
+    #about .container-about .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #school .iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media screen and (max-width : 656px){
+    #home img{
+        width: 400px;
+        height: 400px;
+    }
+    #home .caption{
+        padding: 0px 10px 0px 10px;
+    }
+    #home .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width : 421px){
+    #about .caption{
+        font-size: 15px;
+    }
+    #home img{
+        width: 300px;
+        height: 300px;
+    }
+    #contact .wrapper a{
+        font-size: .5em !important;
+    }
+}
